@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Privacidad y Seguridad en Internet</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style type="text/css">
+			#todo { 
+			   width:873px; 
+			   background-color: #f9f6f6;
+			}
+			h1 {
+			    font-family: Georgia, Tahoma; 
+			    color: #FFF; 
+			    text-align: center;
+			} 
+			#izquierda, #derecha { 
+			    width:436px; 
+			    background-color: #333; 
+			    font-family: Georgia, Tahoma; 
+			    color: #FFF; 
+			    text-align: center;
+			}
+			#contenido { 
+			    width:478px; 
+			    background-color: #FFCC00; 
+			    font-family: Georgia, Tahoma; 
+			    color: #333; 
+			    text-align: center; 
+			    font-weight: bolder;
+			}
+			#izquierda { 
+			   float: left; 
+			} 
+			#derecha { 
+			   float: right; 
+			}
+			#contenido { 
+			   margin-left: 160px;
+			}
+
+			.img_styles div img {
+				border: none;
+				float: left;
+				width: 400px;
+				height: 304px;
+				margin-left: 20px;
+				margin-right: 25px;
+				background-color: transparent;
+				padding-top: 5px;
+				margin-top: 20px;
+			}
+
+			.eye{
+				position:absolute;
+				height:200px;
+				width:200px;
+				top: 40px;
+				left : 40px;
+				z-index: 1;
+			}
+
+			.heaven
+			{
+				position:absolute;
+				height:300px;
+				width:300px;
+				z-index: -1;
+			}
+
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+<!--
+Imagenes
+
+cookies
+https://www.osi.es/sites/default/files/images/blog/cookies_internet.png
+
+password
+https://as01.epimg.net/betech/imagenes/2018/02/06/portada/1517920718_718936_1517920789_sumario_normal.jpg
+
+Video a descargar 
+https://www.facebook.com/Privacidadcomoderecho/videos/1531692310471800/
+-->
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section class="navigate-down">
+					<h1>Privacidad</h1>
+					<section data-background="https://academy.bit2me.com/wp-content/uploads/2017/01/anonimato_en_bitcoin.jpg">
+						<h2>¿Qué es?</h2>
+					</section>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section class="navigate-down">
+						<p>
+							Es el derecho moral que tienen todos los individuos para estar solos, sin ninguna vigilancia o interferencia de otras personas u organizaciones incluso el estado.
+						</p>
+					</section>
+
+					<section data-transition="slide" data-background="#ffffff" data-background-transition="zoom">
+						<a href="#" class="navigate-down">
+							<img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4oApenOFYXdLm3weIEQ2YKPSllfluVPimW1fSHBcPctpAeJWx" style="height: 586px; width: 818.524px;" alt="Down arrow">
+						</a>
+					</section>
+
+					<section data-transition="slide" data-background="#0040FF" data-background-transition="zoom">
+						<img class="stretch" src="imagenes/internet.png" style="height: 286px; width: 518.524px;">
+					</section>
+
+					<section data-transition="slide" data-background="#151515" data-background-transition="zoom">
+						<img class="stretch" src="imagenes/privacidad-internet-.webp" style="height: 286px; width: 518.524px;">			
+					</section>
+
+					<section data-background-video="video/privado.mp4" data-background-video-loop="true">						
+					</section>
+				</section>
+
+				<section data-transition="slide" data-background="#fff" data-background-transition="zoom">
+					<h2>Esta es tu privacidad</h2>						
+					<img class="stretch" src="imagenes/huevo.png" style="height: 286px; width: 518.524px;">											
+				</section>
+
+				<section data-transition="slide" data-background="#151515" data-background-transition="zoom">
+					<h2>Y esta tú privacidad en OnLine</h2>						
+					<img class="stretch" src="imagenes/dolor-por-el-huevo-frito.jpg" style="height: 286px; width: 518.524px;">						
+				</section>
+
+				<section data-transition="slide" data-background="#fff" data-background-transition="zoom">
+					<h2>Lo que pasa en las vegas lo sabe Facebook</h2>						
+					<img class="stretch" src="imagenes/moments.jpg" style="height: 286px; width: 518.524px;">						
+				</section>
+
+				<section>
+					<section data-transition="slide" data-background="#FA8072" data-background-transition="zoom">
+						<img class="stretch" src="imagenes/compra_online.jpg" style="height: 286px; width: 518.524px;">
+						<br>
+						<span class="fragment highlight-grey">La información personal se ha convertido en un producto de compra venta</span>
+					</section>
+					<section data-transition="slide" data-background="#fff" data-background-transition="zoom">
+						<img class="stretch" src="imagenes/buy.jpg" style="height: 286px; width: 518.524px;">
+						<br>
+						<span class="fragment highlight-grey">Ya sabes lo que dicen si el servicio es gratis, entonces el producto eres tu.</span>
+					</section>
+				</section>
+
+				<section data-transition="slide" data-background="#f8fbfa" data-background-transition="zoom">			
+					<div class="image-row">
+						<div id="todo">
+						   <div id="izquierda"><img src="imagenes/gmail.png" style="height: 286px; width: 518.524px;"></div>
+						   <div id="derecha"><img src="imagenes/clima.jpg" style="height: 286px; width: 518.524px;"></div>
+						   <div id="contenido">
+						      <img src="imagenes/notas-de-prensa.png" style="height: 286px; width: 518.524px;">
+						   </div>
+						</div>
+					</div>
+				</section>
+
+				<section data-transition="slide" data-background="#dddddd" data-background-transition="zoom">			
+					<div class="img_styles">
+						<div><img src="imagenes/compras.jpg"></div>
+						<div><img src="imagenes/vacaciones.jpg"></div>
+						<div><img src="imagenes/1563034.jpg"></div>
+					</div>
+
+					<div class="img_styles">
+						<div><img src="imagenes/correr.jpg"></div>
+					</div>
+				</section>
+
+				<section>
+					<section data-background="#fff">
+						<img class="stretch" src="imagenes/TECNOLOGIA.jpg" style="height: 286px; width: 518.524px;">
+					</section>
+				</section>
+
+				<section data-transition="slide" data-background="#ffffff" data-background-transition="zoom">
+					<h2>Entonces diras</h2>				
+					<br>								
+					<h1>Yo paso de todo esto...</h1>												
+				</section>
+
+				<section data-background="#fff">
+					<img class="stretch" src="imagenes/dentro.png" style="height: 286px; width: 518.524px;">						
+					<h4>Ya estas dentro del sistema, y si no estas tú, alguien mas lo esta por tí.</h4>						
+				</section>
+
+				<section data-background="#dddddd">
+					<img class="stretch" src="imagenes/msjMozilla.png" style="height: 286px; width: 518.524px;">			
+				</section>
+
+				<section data-background="#fff">
+					<h2>Complementos Mozilla</h2>						
+					<img class="stretch" src="imagenes/sombria.png" style="height: 286px; width: 518.524px;">	
+					<br>
+					<a href="https://www.eff.org/https-everywhere">https://www.eff.org/https-everywhere</a>				
+				</section>
+
+				<section data-background="#fff">
+					<h5>¿Quieres neutralizar los aparatos que invaden la privacidad como los anuncios?</h5>						
+					<img class="stretch" src="imagenes/uBlock.png" style="height: 286px; width: 518.524px;">	
+					<br>
+					<a href="https://www.ublock.org/">https://www.ublock.org/</a>				
+				</section>
+
+				<section data-background="#fff">
+					<h5>Lightbeam Extension for Firefox</h5>						
+					<img class="stretch" src="imagenes/Lightbeam.jpg" style="height: 286px; width: 518.524px;">			
+				</section>
+
+				<section data-background="#fff">
+					<h2>Decentraleyes</h2>						
+					<img class="stretch" src="imagenes/decentraleyes.png" style="height: 286px; width: 518.524px;">	
+					<br>
+					<p style="font-size: 30px;">Necesita una extensión del navegador web que emula las redes de entrega de contenidos para proteger su</p><p style="font-size: 30px; color: #42affa">#privacidad.</p>						
+					<p><a href="https://decentraleyes.org/">https://decentraleyes.org/</a></p>				
+				</section>
+
+				<section data-background="#fff">
+					<h2>Más complementos Mozilla</h2>						
+					<p style="font-size: 30px;">Aquí hay una lista de addons para ayudarte a gestionar tu configuración de</p>
+					<p style="font-size: 30px; color: #42affa;">#privacidad.</p><p style="font-size: 30px;">en firefox navegador</p>						
+					<p><a href="https://addons.mozilla.org/en-US/firefox/collections/mozilla/privacy-matters/">https://addons.mozilla.org/en-US/firefox/collections/mozilla/privacy-matters/</a></p>				
+				</section>
+
+				<section>
+					<section data-background="#fff">
+						<h2>¿Tú información privada es tan segura como tus contraseñas?</h2>						
+					</section>
+
+					<section data-background="#fff">
+						<img class="stretch" src="imagenes/ladronPass.png" style="height: 286px; width: 518.524px;">	
+						<br>
+						<h6>El 73 % de los usuarios tienen la misma contraseña para múltiples sitios</h6>	
+					</section>
+
+					<section data-background="#fff">
+						<img class="stretch" src="imagenes/password.png" style="height: 286px; width: 518.524px;">	
+						<br>
+						<h6>El 33 % de los usuarios usa la misma contraseña cada vez.</h6>	
+					</section>
+
+					<section data-background="#fff">
+						<img class="stretch" src="imagenes/passStronge.png" style="height: 286px; width: 518.524px;">	
+						<br>
+						<h6>Contraseñas más fuertes = mejor protección.</h6>	
+					</section>
+
+					<section data-background="#fff">
+						<img class="stretch" src="imagenes/password-sophia-pasos-750.jpg" style="height: 286px; width: 518.524px;">	
+						<br>
+						<p style="font-size: 30px;">Deja de crear passwords que tengan sentido Una manera de hacer una gran contraseña es unir palabras no relacionadas. 
+						Se llama una frase de frase.</p>	
+					</section>
+
+					<section data-background-video-loop="true">	
+						<iframe width="760" height="515" src="https://www.youtube.com/embed/COU5T-Wafa4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					
+					</section>
+				</section>
+				
+				<section>
+					<section id="fragments">
+						<h6 class="highlight-blue">Crear Contraseñas Seguras</h6>
+						<p class="fragment">Paso 1:</p>
+						<p class="fragment">Elige una frase</p>
+						<p>
+							<span class="fragment" style="color: green;">Dios es nuestro amparo y fortaleza</span> 
+						</p>
+						<p>	
+							<span class="fragment">Paso 2:</span> 
+							<span class="fragment">Reducirla</span>
+						</p>
+						<p>
+							<span class="fragment">Denayf</span>							
+						</p>
+						<p>
+							<span class="fragment">Paso 3:</span>							
+							<span class="fragment">Asociarla a algún sitio web</span>							
+						</p>
+						<p>
+							<span class="fragment" style="color: red;">#Denayf:Amz (Para Amazon)</span>																					
+						</p>
+						<p><span class="fragment" style="color: red;">fCb#Denayf: (Para Facebook)</span></p>
+						<p><span class="fragment" style="color: red;">#Denayf:YtB (Para YouTube)</span></p>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="#fff">
+						<h1 class="fragment highlight-blue">Test</h1>						
+						<br>
+						<a href="https://howsecureismypassword.net/">https://howsecureismypassword.net/</a>				
+					</section>
+
+					<section data-background="#fff">
+						<h2>Generador de Contraseña</h2>						
+						<img class="stretch" src="imagenes/pass.png" style="height: 286px; width: 518.524px;">	
+						<br>
+						<p style="font-size: 30px;">Prueba un administrador de contraseñas.</p>					
+						<p><a href="https://lesspass.com">https://lesspass.com</a></p>				
+					</section>
+				</section>	
+				
+				<section data-background="#fff">
+					<h2>Firefox Monitor</h2>						
+					<img class="stretch" src="imagenes/firefox-monitor.png" style="height: 286px; width: 518.524px;">	
+					<br>
+					<p style="font-size: 30px;">Firefox Monitor te avisa si tus cuentas en línea se han visto involucradas en una filtración de datos.</p>					
+					<p><a href="https://monitor.firefox.com/">https://monitor.firefox.com/</a></p>				
+				</section>
+
+				<section>
+					
+					<section data-background="#fff">
+						<h2 class="fragment grow highlight-blue">Consejos Prácticos</h2>			
+					</section>
+
+					<section data-background="#fff">
+						<img class="stretch" src="imagenes/privacidad0.png" style="height: 286px; width: 518.524px;">	
+						<br>
+						<p style="font-size: 35px;">Cambia el #trackingprotection para proteger tus datos:</p>					
+						<p style="font-size: 30px;"><a href="https://blog.mozilla.org/firefox/tracking-protection-always-on/">https://blog.mozilla.org/firefox/tracking-protection-always-on/</a></p>				
+					</section>
+
+					<section data-transition="slide" data-background="#EAE7E6" data-background-transition="zoom">
+						<img class="stretch" src="imagenes/privacidad1.png" style="height: 286px; width: 518.524px;">	
+						<br>
+						<h5>Los tiempos de respuesta son más rápidos</h5> 					
+					</section>
+
+					<section data-background-video-loop="true">	
+						<iframe width="760" height="515" src="https://www.youtube.com/embed/pDZXaegVuUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</section>
+
+					<section data-transition="slide" data-background="#067676" data-background-transition="zoom">
+						<img class="stretch" src="imagenes/modo_invitado.jpg" style="height: 286px; width: 518.524px;">	
+						<br>
+						<p style="font-size: 35px;">Comparte tu firefox con un invitado. Cierra fácilmente tus datos personales con las sesiones de invitados.<a href=""> #privacymonth</a></p>											
+					</section>
+
+					<section data-transition="slide" data-background="#fff" data-background-transition="zoom">
+						<img class="stretch" src="imagenes/pasar-de-http-a-ahttps-wordpress.png" style="height: 286px; width: 518.524px;">	
+						<br>
+						<p style="font-size: 35px;">Consejo del día: https! Navega seguro. Busca una cerradura verde en el bar url<a href=""> #privacymonth</a></p>											
+					</section>
+
+					<section data-background="#fff">
+						<img class="stretch" src="imagenes/privacidad2.png" style="height: 286px; width: 518.524px;">	
+						<br>
+						<p style="font-size: 35px;">Consejo del día: protege tu perfil. No proporcionar más información de lo que es necesario para la red social<a href=""> #privacymonth</a></p>															
+					</section>
+
+					<section data-background="#fff">
+						<img class="stretch" src="imagenes/imagenes-derechos-de-autor-internet.jpg" style="height: 286px; width: 518.524px;">	
+						<br>
+						<p style="font-size: 22px;">No dejes de compartir en las redes sociales. Usa la regla de "primera página" en las redes sociales. No publiques nada en línea que nunca quieras ver en la primera página del periódico.</p>															
+						<p style="font-size: 22px;">Usa la configuración de privacidad para controlar quién ve tus publicaciones, pero ten en cuenta que incluso la configuración de privacidad más fuerte no impedirá que alguien vuelva a compartir lo que has publicado. Más:
+							<a href="https://www.wikihow.com/Avoid-Oversharing-on-Social-Media"> https://www.wikihow.com/Avoid-Oversharing-on-Social-Media</a></p>															
+					</section>
+
+					<section data-transition="slide" data-background="#116FA9" data-background-transition="zoom">
+						<img class="stretch" src="imagenes/rastro.jpg" style="height: 286px; width: 518.524px;">	
+						<br>
+						<p style="font-size: 35px;">Eliminar las cuentas no utilizadas para borrar tu rastro digital en línea.</p>											
+					</section>
+
+					<section data-transition="slide" data-background="#fff" data-background-transition="zoom">
+						<img class="stretch" src="imagenes/plugin-de-seguridad-de-wordpress.png" style="height: 286px; width: 518.524px;">	
+						<br>
+						<p style="font-size: 35px;">Actualiza tu configuración de la aplicación para asegurar que sólo la información limitada y necesaria está expuesta.<a href=""> #privacymonth</a></p>											
+					</section>
+
+					<section data-background="#fff">
+						<img class="stretch" src="imagenes/cifrado.gif" style="height: 286px; width: 518.524px;">
+						<p style="font-size: 35px;">El cifrado es un método utilizado para asegurar la comunicación sobre una conexión usando.<a href=""> #privacymonth</a></p>
+					</section>
+
+					<section data-background="#fff">
+						<img class="stretch" src="imagenes/privacidad3.png" style="height: 286px; width: 518.524px;">
+						<p style="font-size: 35px;">Tienes una llamada, correo electrónico, sms pidiendo tus credenciales o alfileres. Detente! No respondas. Llame al cuidado del cliente en su lugar y informe.</p>
+					</section>
+
+					<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<img class="stretch" src="imagenes/privacidad4.png" style="height: 286px; width: 518.524px;">
+						<p style="font-size: 35px;">Sorprendido de encontrar un correo electrónico de un banco o sitio social pidiendo que inicie sesión? No haga clic; abra una nueva ventana del navegador y escriba en la dirección del sitio web de la empresa en su lugar.</p>
+					</section>
+
+					<section data-transition="slide" data-background="#FFFFFF" data-background-transition="zoom">
+						<img class="stretch" src="imagenes/cookies.png" style="height: 286px; width: 518.524px;">
+						<p style="font-size: 35px;">Remover cookies periódicamente o utilizar la navegación privada en firefox. Y mantén tus datos / computadora a salvo.</p>
+					</section>
+
+					<section data-transition="slide" data-background="#EAE7E6" data-background-transition="zoom">
+						<img class="stretch" src="imagenes/flowers.png" style="height: 286px; width: 518.524px;">
+						<p style="font-size: 35px;">Olvida el botón - elimina rápidamente tu historia de navegación en firefox. <a href="http://mzl.la/1EkYFVT">http://mzl.la/1EkYFVT</a><a href="">#privacymont</a></p>
+					</section>
+
+					<section data-transition="slide" data-background="#F8E0F7" data-background-transition="zoom">
+						<img class="stretch" src="imagenes/vpn.jpg" style="height: 286px; width: 518.524px;">
+						<p style="font-size: 35px;">Detener a los anunciantes y otros rastreadores de terceros de rastrear en secreto a dónde vas y qué páginas miras en la web. Usa el tejón de privacidad y desaparece sin dejar rastro de los ojos de los anunciantes. Más:<a href="https://www.eff.org/privacybadger">https://www.eff.org/privacybadger</a><a href="">#fep</a></p>
+					</section>
+
+					<section data-transition="slide" data-background="#FFFFFF" data-background-transition="zoom">
+						<img class="stretch" src="imagenes/linux.jpg" style="height: 286px; width: 618.524px;">
+						<p style="font-size: 20px;">Ser una solución de fuente libre / abierta para tu computadora os, tienes un control completo sobre él. Se encripta su disco duro, tiene fácil de configurar cortafuegos y algunos mecanismos de protección esotérica.</p>
+						<p style="font-size: 20px;">Hay muchos distros disponibles algunos de los más famosos: <a href="https://www.ubuntupit.com/popular-linux-distro-explore-top-5-get-best-one/">https://www.ubuntupit.com/popular-linux-distro-explore-top-5-get-best-one/</a></p> 
+					</section>
+
+					<section data-transition="slide" data-background="#2ECCFA" data-background-transition="zoom">
+						<img class="stretch" src="imagenes/notas.jpg" style="height: 286px; width: 518.524px;">
+						<p style="font-size: 30px;">"hay tanto en la privacidad que me temo que es imposible proteger plenamente a nosotros mismos en internet desde los ojos de las corporaciones amoral, pero podemos minimizar este riesgo" - iulian gulea</p>
+					</section>
+
+				</section>
+				
+				<section data-transition="slide" data-background="#EAE7E6" data-background-transition="zoom">
+					<img class="stretch" src="imagenes/dispositivos.jpg" style="height: 286px; width: 518.524px;">
+					<p style="font-size: 30px;">"Las aplicaciones móviles te permiten darles permisos para acceder a contactos o archivos en el almacenamiento de dispositivos, y para usar la cámara, micrófono, geolocalización, y así sucesivamente. Es relativamente fácil controlar qué aplicaciones se dan a qué permisos. Revisa los permisos que le das a las aplicaciones móviles.</p>
+				</section>
+
+				<section data-transition="slide" data-background="#FFFFFF" data-background-transition="zoom">
+					<img class="stretch" src="imagenes/focus.png" style="height: 286px; width: 518.524px;">
+					<p style="font-size: 30px;">Firefox focus - un navegador privado gratis, rápido y fácil de usar para tu móvil sin pestañas, sin menús, sin pop-Ups. Big Plus, bloquea automáticamente los rastreadores</p>
+					<p style="font-size: 35px;"> Enlace para descargar:</p>
+
+					<p><a href="https://www.mozilla.org/en-US/firefox/mobile/">https://www.mozilla.org/en-US/firefox/mobile/</a></p>
+				</section>
+
+				<section data-transition="slide" data-background="#FFFFFF" data-background-transition="zoom">
+					<img class="stretch" src="imagenes/gracias.png" style="height: 286px; width: 518.524px;">
+					<!-- <br>
+					<img class="stretch" src="imagenes/baile.gif" style="height: 86px; width: 28.524px;"> --> 
+
+					<!-- <img src="imagenes/gracias.png" style="height: 286px; width: 518.524px;" class="heaven"/>
+					<img src="imagenes/baile.gif" style="height: 86px; width: 28.524px;" class="eye"/> -->
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+
+	</body>
+</html>
